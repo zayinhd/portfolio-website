@@ -6,12 +6,29 @@ import { motion } from "framer-motion";
 
 const Home = () => {
     return (
-        <section className="h-screen pt-2pl-5 flex flex-col text-center">
+        <section className="h-screen flex flex-col flex-wrap text-center">
             <div className="my-6">
-                <div>
-                    <p>
-                        Hi, I'm a front-end developer with some experience in
-                        some backend tools.
+                <div className="w-[80%] lg:w-full m-4 text-left ">
+                    <h1 className="text-3xl font-bold">Cough, Cough!!!</h1>
+                    <p className="pt-3">
+                        Here comes the boring, Hi. You can just call me Zayin.
+                        I'm a self-taught{" "}
+                        <b className="text-bold text-white">
+                            Front-End Developer{" "}
+                        </b>{" "}
+                        with some experience in some backend tools. I've built
+                        some interesting projects over the past year with my
+                        unmatchable skill, Lol.
+                        <br />
+                        <br />
+                        My next big goal is to break and dive deep into the
+                        <b className="text-bold text-white">
+                            Back-End Field
+                        </b>{" "}
+                        and extrapolate the knowledge I extract into my{" "}
+                        <b className="text-bold text-white">
+                            Upcoming projects.
+                        </b>
                     </p>
                 </div>
                 <div className="pt-2">
@@ -32,8 +49,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="text-center">
-                <h1 className="font-bold">Skills</h1>
-                <div className="flex flex-wrap bg-black">
+                <h1 className="text-3xl font-bold">Skills</h1>
+                <div className="mt-3 flex flex-wrap">
                     <Stacks />
                 </div>
             </div>

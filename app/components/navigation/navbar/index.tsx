@@ -9,11 +9,11 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
     return (
         <>
-            <div className="w-[100vw] border-b-2 border-white h-20 bg-primary sticky top-0">
+            <div className="w-full h-20 bg-primary sticky top-0">
                 <div className="container mx-auto px-4 h-full">
-                    <div className="flex justify-between items-center h-full">
+                    <div className="flex justify-around items-center h-full">
                         <Logo />
-                        <ul className="hidden md:flex gap-x-6 text-white">
+                        <ul className="hidden md:flex gap-x-6 text-white text-xl">
                             <li>
                                 <Link href="/projects">
                                     <p>Projects</p>

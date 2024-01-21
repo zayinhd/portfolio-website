@@ -13,9 +13,11 @@ const RootLayout = ({ children }) => {
             <body className="box-border">
                 <div className="flex flex-col flex-wrap main">
                     <Navigation />
-                    <main className="flex flex-col flex-wrap bg-secondary">
-                        {children}
-                    </main>
+                    <div className="h-[100vh] p-5 flex justify-center bg-secondary">
+                        <main className="w-[100%] sm:w-[75%] m-auto flex flex-row justify-center flex-wrap">
+                            {children}
+                        </main>
+                    </div>
                     <Footer />
                 </div>
             </body>

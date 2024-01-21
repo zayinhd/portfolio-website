@@ -3,7 +3,7 @@ interface ProjectsProps {
     title: string;
     image: string;
     description: string;
-    tags: string;
+    tags: string[];
     visit: string;
     source: string;
 }
@@ -11,10 +11,19 @@ interface ProjectsProps {
 const projects: ProjectsProps[] = [
     {
         id: 0,
-        title: "Mern memories",
+        title: "Todo List",
         image: "Mern memories",
         description: "Lorem ipsum  delat tlat fuka kdea .",
-        tags: "Mern memories",
+        tags: ["ReactJs", "Typescript"],
+        visit: "Mern memories",
+        source: "Mern memories",
+    },
+    {
+        id: 1,
+        title: "Todo List",
+        image: "Mern memories",
+        description: "Lorem ipsum  delat tlat fuka kdea .",
+        tags: ["ReactJs", "Typescript"],
         visit: "Mern memories",
         source: "Mern memories",
     },

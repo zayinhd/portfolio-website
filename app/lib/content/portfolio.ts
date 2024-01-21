@@ -31,7 +31,7 @@ export const seoData = {
         "Mikhail",
         "Zayin Mikhail",
         "@zayinhd",
-        "vatsalsinghkv",
+        "zayinhd",
         "Portfolio",
     ],
 };
