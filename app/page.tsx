@@ -8,29 +8,30 @@ const Home = () => {
     return (
         <section className="h-screen flex flex-col flex-wrap text-center">
             <div className="my-6">
-                <div className="w-[80%] lg:w-full m-4 text-left ">
+                <motion.div
+                    className="w-[80%] lg:w-full m-4 text-left "
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 0.8,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}
+                >
                     <h1 className="text-3xl font-bold">Cough, Cough!!!</h1>
                     <p className="pt-3">
-                        Here comes the boring, Hi. You can just call me Zayin.
-                        I'm a self-taught{" "}
-                        <b className="text-bold text-white">
-                            Front-End Developer{" "}
-                        </b>{" "}
-                        with some experience in some backend tools. I've built
-                        some interesting projects over the past year with my
-                        unmatchable skill, Lol.
+                        Here comes the boring, Hi. You can just call me{" "}
+                        <b className="text-xl">Zayin</b>. I'm a self-taught{" "}
+                        <b>Front-End Developer </b> with some experience in some
+                        backend tools.
                         <br />
                         <br />
-                        My next big goal is to break and dive deep into the
-                        <b className="text-bold text-white">
-                            Back-End Field
-                        </b>{" "}
-                        and extrapolate the knowledge I extract into my{" "}
-                        <b className="text-bold text-white">
-                            Upcoming projects.
-                        </b>
+                        I've created some apps with{" "}
+                        <b className="text-xl">ReactJS, NextJs </b> and{" "}
+                        <b className="text-xl"> JS</b>. Currently diving deep
+                        into <b className="text-xl">Back-end.</b>
                     </p>
-                </div>
+                </motion.div>
                 <div className="pt-2">
                     <motion.button
                         whileHover={{ scale: 1.1 }} // Scale up by 10% on hover

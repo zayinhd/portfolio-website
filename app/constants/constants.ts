@@ -15,8 +15,8 @@ const projects: ProjectsProps[] = [
         image: "Mern memories",
         description: "Lorem ipsum  delat tlat fuka kdea .",
         tags: ["ReactJs", "Typescript"],
-        visit: "Mern memories",
-        source: "Mern memories",
+        visit: "https://react-todolist-project.vercel.app/",
+        source: "https://github.com/zayinhd/react-todolist-project",
     },
     {
         id: 1,
