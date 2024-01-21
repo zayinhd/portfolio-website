@@ -1,4 +1,14 @@
-const projects = [
+interface ProjectsProps {
+    id: number;
+    title: string;
+    image: string;
+    description: string;
+    tags: string;
+    visit: string;
+    source: string;
+}
+
+const projects: ProjectsProps[] = [
     {
         id: 0,
         title: "Mern memories",
