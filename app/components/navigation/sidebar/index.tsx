@@ -9,7 +9,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
     return (
         <>
             <div
-                className="sidebar-container transition  fixed w-full h-full overflow-hidden justify-center bg-primary grid pt-[30px] left-0 z-10"
+                className="sidebar-container transition  fixed w-full h-full overflow-hidden justify-center bg-grey dark:bg-primary dark:text-white grid pt-[30px] left-0 z-10"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: ` ${isOpen ? "0" : "-100%"}`,
@@ -30,7 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
                     </svg>
                 </button>
 
-                <ul className="sidebar-nav  flex flex-col justify-evenly items-start text-center text-5xl leading-relaxed">
+                <ul className="sidebar-nav  flex flex-col justify-evenly items-start text-center text-5xl font-bold leading-relaxed">
                     <li>
                         <Link href="/projects" onClick={toggle}>
                             <p>Projects</p>

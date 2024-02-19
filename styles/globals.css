@@ -5,6 +5,9 @@
 /* Your custom styles here */
 @layer components {
     .text-bd {
-        @apply text-xl text-primary;
+        @apply text-xl text-primary dark:text-white;
+    }
+    .btn-info {
+        @apply mr-5 border-2 border-black dark:border-white rounded-full text-black dark:text-white py-1 px-4 bg-transparent hover:bg-grey dark:hover:bg-primary;
     }
 }
