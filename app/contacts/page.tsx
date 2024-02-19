@@ -8,21 +8,13 @@ const Contacts = () => {
                 </h1>
                 <p>
                     I’m currently working on some
-                    <b className="text-xl text-bold text-primary">
-                        {" "}
-                        Personal Projects{" "}
-                    </b>
-                    . If you have any projects that you would like to undertake
-                    do feel free to reach out. I'm looking for a{" "}
-                    <b className="text-xl text-bold text-primary">
-                        remote job
-                    </b>{" "}
-                    or any
-                    <b className="text-xl text-bold text-primary">
-                        new opportunities.
-                    </b>{" "}
-                    Just send me a message my inbox is always
-                    <b className="text-xl text-bold text-primary"> Open</b>.
+                    <b className="text-bd"> personal projects </b>. If you have
+                    any projects that you would like to undertake do feel free
+                    to reach out. I'm looking for a{" "}
+                    <b className="text-bd">remote job</b> or any
+                    <b className="text-bd">new opportunities.</b> Just send me a
+                    message my inbox is always
+                    <b className="text-bd"> open</b>.
                 </p>
             </div>
         </section>

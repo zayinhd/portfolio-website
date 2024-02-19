@@ -8,9 +8,7 @@ const Projects = () => {
                 <h1 className="text-3xl font-bold">Projects</h1>
                 <p className="mt-3">
                     Here are some of the projects I've worked on. Do{" "}
-                    <b className="text-xl text-bold text-primary">
-                        check them out.
-                    </b>
+                    <b className="text-bd">check them out.</b>
                 </p>
                 <div className="mt-5">
                     <CardItem projects={projects} />

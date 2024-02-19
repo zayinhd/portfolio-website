@@ -2,7 +2,7 @@ import SocialMediaIcons from "../stacks/SocialMediaIcons/SocialMediaIcons";
 
 const Footer = () => {
     return (
-        <div className=" w-full flex flex-col justify-center p-4 bg-primary">
+        <div className=" w-full flex flex-col justify-center p-4 bg-grey dark:bg-primary">
             <div className="flex flex-row justify-center">
                 <ul className="text-center">
                     <li>

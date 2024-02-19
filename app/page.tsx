@@ -21,15 +21,15 @@ const Home = () => {
                     <h1 className="text-3xl font-bold">Cough, Cough!!!</h1>
                     <p className="pt-3">
                         Here comes the boring, Hi. You can just call me{" "}
-                        <b className="text-xl">Zayin</b>. I'm a self-taught{" "}
+                        <b className="text-bd">Zayin</b>. I'm a self-taught{" "}
                         <b>Front-End Developer </b> with some experience in some
                         backend tools.
                         <br />
                         <br />
                         I've created some apps with{" "}
-                        <b className="text-xl">ReactJS, NextJs </b> and{" "}
-                        <b className="text-xl"> JS</b>. Currently diving deep
-                        into <b className="text-xl">Back-end.</b>
+                        <b className="text-bd">ReactJS, NextJs </b> and{" "}
+                        <b className="text-bd"> JS</b>. Currently diving deep
+                        into <b className="text-bd">Back-end.</b>
                     </p>
                 </motion.div>
                 <div className="pt-2">

@@ -3,10 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* Your custom styles here */
-@layer base {
-    p,
-    h1,
-    a {
-        color: white;
+@layer components {
+    .text-bd {
+        @apply text-xl text-primary;
     }
 }

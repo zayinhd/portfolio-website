@@ -24,6 +24,7 @@ module.exports = {
             white: "#ffffff",
             danger: "#dc2626",
             black: "#030712",
+            grey: "#9ca3af",
         },
         fontSize: {
             sm: "0.8rem",
