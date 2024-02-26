@@ -25,6 +25,17 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang="en">
+            <head>
+                {seoData.icons.map((icon) => (
+                    <link
+                        key={icon.id}
+                        rel={icon.rel}
+                        sizes={icon.sizes}
+                        type={icon.type}
+                        href={icon.url}
+                    />
+                ))}
+            </head>
             <body className="box-border bg-white dark:bg-secondary">
                 <ThemeProvider
                     attribute="class"
