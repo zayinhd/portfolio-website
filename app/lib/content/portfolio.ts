@@ -20,18 +20,49 @@ export const author = {
 };
 
 export const seoData = {
-    title: "Vatsal Singh | Front-End Developer",
+    title: "Zayin Mikhail | Front-End Developer",
     description:
-        "Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.",
+        "Mikhail is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.",
     author: author.name,
-    image: "https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png",
-    url: "https://vatsalsinghkv.vercel.app/",
+    url: "https://zayinhd.vercel.app/",
     keywords: [
         "Zayin",
         "Mikhail",
         "Zayin Mikhail",
         "@zayinhd",
         "zayinhd",
+        "zayinm300@gmail.com",
         "Portfolio",
+    ],
+    icons: [
+        {
+            rel: "apple-touch-icon",
+            sizes: "120x120",
+            url: "/favicons/apple-touch-icon.png",
+        },
+        {
+            rel: "icon",
+            type: "image/png",
+            sizes: "512x512",
+            url: "/favicons/android-chrome-512x512.png",
+        },
+        {
+            rel: "icon",
+            type: "image/png",
+            sizes: "192x192",
+            url: "/favicons/android-chrome-192x192.png",
+        },
+        {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            url: "/favicons/favicon-32x32.png",
+        },
+        {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            url: "/favicons/favicon-16x16.png",
+        },
     ],
 };

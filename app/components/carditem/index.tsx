@@ -6,7 +6,7 @@ const CardItem = ({ projects }) => {
             {projects.map((project) => (
                 <li
                     key={project.id}
-                    className="lg:w-[40%] m-2 p-2 border-2 border-white"
+                    className="lg:w-[40%] m-2 p-2 border-2 border-primary dark:border-white"
                 >
                     <img src="" alt="" />
                     <h1>{project.title}</h1>
@@ -16,7 +16,7 @@ const CardItem = ({ projects }) => {
                             {project.tags.map((tag) => (
                                 <li
                                     key={tag}
-                                    className="mt-1 p-1 border-2 rounded-lg text-white border-white"
+                                    className="mt-1 p-1 border-2 rounded-lg text-primary border-primary dark:border-white dark:text-white"
                                 >
                                     {tag}
                                 </li>
@@ -26,14 +26,14 @@ const CardItem = ({ projects }) => {
                             <a
                                 href={project.visit}
                                 target="_blank"
-                                className="mt-1 p-1 border-2 rounded-lg border-white bg-primary"
+                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-primary"
                             >
                                 Visit
                             </a>
                             <a
                                 href={project.source}
                                 target="_blank"
-                                className="mt-1 p-1 border-2 rounded-lg border-white bg-primary"
+                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-primary"
                             >
                                 Source
                             </a>

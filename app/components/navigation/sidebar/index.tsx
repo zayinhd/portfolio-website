@@ -1,6 +1,8 @@
 import Link from "next/link";
 import "../../../../styles/globals.css";
 
+import { motion } from "framer-motion";
+
 interface SidebarProps {
     isOpen: boolean;
     toggle: () => void;
@@ -30,22 +32,31 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
                     </svg>
                 </button>
 
-                <ul className="sidebar-nav  flex flex-col justify-evenly items-start text-center text-5xl font-bold leading-relaxed">
-                    <li>
+                <ul className="sidebar-nav  flex flex-col justify-evenly items-start text-center text-primary text-5xl font-bold leading-relaxed">
+                    <motion.li
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <Link href="/projects" onClick={toggle}>
                             <p>Projects</p>
                         </Link>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <Link href="/about" onClick={toggle}>
                             <p>About</p>
                         </Link>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <Link href="/contacts" onClick={toggle}>
                             <p>Contacts</p>
                         </Link>
-                    </li>
+                    </motion.li>
                 </ul>
             </div>
         </>

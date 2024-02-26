@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
     return (
-        <section className="h-screen flex flex-col flex-wrap text-center">
+        <section className="h-[100%] flex flex-col flex-wrap text-center">
             <div className="my-6">
                 <motion.div
                     className="w-[80%] lg:w-full m-4 text-left "
@@ -19,16 +19,18 @@ const Home = () => {
                     }}
                 >
                     <h1 className="text-3xl text-primary dark:text-white font-bold">
-                        Cough, Cough!!!
+                        Hey there, I'm Mubarak Mikhail
                     </h1>
                     <p className="pt-3">
-                        Here comes the boring, Hi. You can just call me{" "}
-                        <b className="text-bd">Zayin</b>. I'm a self-taught{" "}
-                        <b className="text-bd">Front-End Developer </b> with
-                        some experience in some backend tools.
-                        <br />
-                        <br />
-                        I've created some apps with{" "}
+                        a passionate and driven software engineering student on
+                        a mission to craft innovative solutions and make a
+                        positive impact through technology. <br />
+                        With a blend of creativity and technical prowess, I
+                        thrive on transforming ideas into tangible digital
+                        experiences. As an aspiring software engineer, I am
+                        constantly exploring new technologies, honing my skills,
+                        and pushing the boundaries of what's possible. I've
+                        created some apps with{" "}
                         <b className="text-bd">ReactJS, NextJs </b> and{" "}
                         <b className="text-bd"> JS</b>. Currently diving deep
                         into <b className="text-bd">Back-end.</b>
@@ -52,7 +54,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="text-center">
-                <h1 className="text-3xl font-bold text-primary dark:text-white">
+                <h1 className="text-3xl font-bold text-primary underline underline-offset-8 decoration-primary dark:decoration-white dark:text-white">
                     Skills
                 </h1>
                 <div className="mt-3 flex flex-wrap">
