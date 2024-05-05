@@ -12,7 +12,7 @@ const SocialMediaIcons: React.FC = () => {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md"
+                        className="bg-blue-500 font-bold py-2 px-4 rounded-md sm-icons"
                     >
                         <a
                             href="https://github.com/zayinhd"
@@ -28,7 +28,7 @@ const SocialMediaIcons: React.FC = () => {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md"
+                        className="bg-blue-500 font-bold py-2 px-4 rounded-md sm-icons"
                     >
                         <a
                             href="https://twitter.com/zayinhd"
@@ -44,7 +44,7 @@ const SocialMediaIcons: React.FC = () => {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md"
+                        className="bg-blue-500 font-bold py-2 px-4 rounded-md sm-icons"
                     >
                         <a
                             href="https://www.instagram.com/zayinhd"

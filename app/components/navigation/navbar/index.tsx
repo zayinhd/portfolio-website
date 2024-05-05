@@ -12,10 +12,14 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
     return (
         <>
-            <div className="w-full h-20 sticky top-0 nav-bar">
+            <div className="w-full h-20 sticky top-0 nav-bar z-10">
                 <div className="container mx-auto px-4 h-full">
                     <div className="flex justify-around items-center h-full">
-                        <Logo />
+                        <div className="w-[15%] flex justify-evenly align-middle">
+                            <Logo />
+                            <h4 className="mt-1">ZayinHD</h4>
+                        </div>
+
                         <div>
                             <ul className="hidden md:flex gap-x-6 text-primary text-xl font-bold dark:text-white">
                                 <motion.li
@@ -70,6 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                         </div>
                     </div>
                 </div>
+                <hr className="text-primary" />
             </div>
         </>
     );

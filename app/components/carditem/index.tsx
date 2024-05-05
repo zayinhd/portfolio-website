@@ -14,7 +14,7 @@ const CardItem = ({ projects }) => {
                         alt={project.title}
                         width={200}
                         height={100}
-                        className="m-auto"
+                        className="m-auto w-auto"
                     />
                     <h1 className="my-1 font-bold text-xl text-primary dark:text-white underline underline-offset-8 decoration-primary  dark:decoration-white ">
                         {project.title}

@@ -61,10 +61,9 @@ const Stacks = () => {
                         whileHover={{ scale: 1.1 }} // Scale up by 10% on hover
                         whileTap={{ scale: 0.9 }} // Scale down by 10% on tap
                         className="bg-blue-500 text-primary font-bold py-2 px-4 rounded-md dark:text-white"
+                        key={stack.id}
                     >
-                        <li key={stack.id} className="text-3xl">
-                            {stack.icon}
-                        </li>
+                        <li className="text-3xl">{stack.icon}</li>
                     </motion.button>
                 ))}
             </ul>

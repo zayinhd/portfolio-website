@@ -11,13 +11,16 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
     return (
         <>
             <div
-                className="sidebar-container transition  fixed w-full h-full overflow-hidden justify-center bg-grey dark:bg-primary text-primary dark:text-white grid pt-[30px] left-0 z-10"
+                className="sidebar-container transition  fixed w-full h-full overflow-hidden justify-center bg-white dark:bg-primary text-primary dark:text-white grid pt-[30px] left-0 z-20"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: ` ${isOpen ? "0" : "-100%"}`,
                 }}
             >
-                <button className="absolute right-0 p-5" onClick={toggle}>
+                <button
+                    className="absolute right-0 p-5 dark:text-white text-primary"
+                    onClick={toggle}
+                >
                     {/* Close icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
                     </svg>
                 </button>
 
-                <ul className="sidebar-nav  flex flex-col justify-evenly items-start text-center dark: text-5xl font-bold leading-relaxed">
+                <ul className="side-bar-nav">
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

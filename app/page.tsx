@@ -1,15 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Stacks from "./components/stacks";
 import { motion } from "framer-motion";
 
 const Home = () => {
     return (
-        <section className="h-[100%] flex flex-col flex-wrap text-center">
+        <section className="h-[100%] flex flex-col flex-wrap text-center ">
             <div className="my-6">
                 <motion.div
-                    className="w-[80%] lg:w-full m-4 text-left "
+                    className="w-[80%] lg:w-full ml-6 text-left flex items-center  bg-[url('/images/my-image.jpg')] bg-cover bg-center rounded-lg dark:mix-blend-screen"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -18,23 +19,36 @@ const Home = () => {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <h1 className="text-3xl text-primary dark:text-white font-bold">
-                        Hey there, I'm Mubarak Mikhail
-                    </h1>
-                    <p className="pt-3">
-                        a passionate and driven software engineering student on
-                        a mission to craft innovative solutions and make a
-                        positive impact through technology. <br />
-                        With a blend of creativity and technical prowess, I
-                        thrive on transforming ideas into tangible digital
-                        experiences. As an aspiring software engineer, I am
-                        constantly exploring new technologies, honing my skills,
-                        and pushing the boundaries of what's possible. I've
-                        created some apps with{" "}
-                        <b className="text-bd">ReactJS, NextJs </b> and{" "}
-                        <b className="text-bd"> JS</b>. Currently diving deep
-                        into <b className="text-bd">Back-end.</b>
-                    </p>
+                    <div className="p-4 text-black dark:text-white font-bold">
+                        <h1 className="text-xl ">
+                            Hey there, I'm Mubarak Mikhail
+                        </h1>
+                        <p className="pt-3">
+                            a passionate and driven{" "}
+                            <b className="text-bd">Computer Science Student</b>{" "}
+                            on a mission to craft innovative solutions and make
+                            a positive impact through technology. <br />
+                            With a blend of creativity and technical prowess, I
+                            thrive on transforming ideas into tangible digital
+                            experiences. As an aspiring software engineer, I am
+                            constantly exploring new technologies, honing my
+                            skills, and pushing the boundaries of what's
+                            possible. I've created some apps with{" "}
+                            <b className="text-bd">ReactJS, NextJs </b> and{" "}
+                            <b className="text-bd"> JS</b>. Currently diving
+                            deep into <b className="text-bd">Back-end.</b>
+                        </p>
+                    </div>
+                    <div className="flex-shrink-0">
+                        <div className="h-full">
+                            <Image
+                                src="/images/my-image.jpg"
+                                width={300}
+                                height={500}
+                                alt="my-image"
+                            />
+                        </div>
+                    </div>
                 </motion.div>
                 <div className="pt-2">
                     <motion.button
