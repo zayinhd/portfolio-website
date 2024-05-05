@@ -4,10 +4,10 @@ import Image from "next/image";
 const About = () => {
     return (
         <section className="w-full flex-center flex-col">
-            <div className="w-[80%] lg:w-full m-4 text-left ">
+            <div className="w-full lg:w-full m-4 text-left ">
                 <h1 className="text-3xl page-topics font-bold">About Me</h1>
-                <div className="flex">
-                    <div className="mr-4">
+                <div className=" text-center flex xm:flex-col xm:justify-center xm:align-middle md:flex-row">
+                    <div className="mr-4 flex-grow">
                         <h1 className="text-2xl font-bold">
                             Hey there! I'm Mubarak Mikhail,
                         </h1>
@@ -52,14 +52,15 @@ const About = () => {
                             engineering!
                         </p>
                     </div>
-                    <div className="flex-shrink-0">
-                        <div className="h-full">
+                    <div className=" text-center flex-shrink-0">
+                        <div className="h-full ">
                             <Image
                                 src="/images/my-image.jpg"
-                                width={300}
-                                height={500}
+                                width={200}
+                                height={100}
                                 alt="my-image"
                                 className="rounded-lg"
+                                style={{ width: "80%", height: "auto" }}
                             />
                         </div>
                     </div>

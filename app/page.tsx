@@ -10,7 +10,7 @@ const Home = () => {
         <section className="h-[100%] flex flex-col flex-wrap text-center ">
             <div className="my-6">
                 <motion.div
-                    className="w-[80%] lg:w-full ml-6 text-left flex items-center  bg-[url('/images/my-image.jpg')] bg-cover bg-center rounded-lg dark:mix-blend-screen"
+                    className="w-[80%] lg:w-full ml-6 text-left flex items-center xm:bg-none  md:bg-[url('/images/my-image.jpg')] bg-cover bg-center rounded-lg dark:mix-blend-screen"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -21,7 +21,8 @@ const Home = () => {
                 >
                     <div className="p-4 text-black dark:text-white font-bold">
                         <h1 className="text-xl ">
-                            Hey there, I'm Mubarak Mikhail
+                            Hey there, I'm{" "}
+                            <b className="text-bd">Mubarak Mikhail, Zayin.</b>
                         </h1>
                         <p className="pt-3">
                             a passionate and driven{" "}
@@ -39,13 +40,14 @@ const Home = () => {
                             deep into <b className="text-bd">Back-end.</b>
                         </p>
                     </div>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 xm:hidden md:block">
                         <div className="h-full">
                             <Image
                                 src="/images/my-image.jpg"
                                 width={300}
                                 height={500}
                                 alt="my-image"
+                                className="rounded-lg"
                             />
                         </div>
                     </div>

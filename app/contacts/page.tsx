@@ -1,9 +1,12 @@
+"use client";
+import ContactForm from "../components/contact-form";
+
 const Contacts = () => {
     return (
-        <section className="w-full flex-center flex-col">
-            <div className="w-[80%] lg:w-full m-4 text-left ">
+        <section className="w-full flex-center flex-col text-center">
+            <div>
                 <h1 className="font-bold page-topics">Let's get to work...</h1>
-                <h1 className="text-3xl text-center font-bold text-primary">
+                <h1 className="text-3xl  font-bold text-primary dark:text-white">
                     Status - Available!
                 </h1>
                 <p>
@@ -16,6 +19,9 @@ const Contacts = () => {
                     <b> open</b>.
                 </p>
             </div>
+            <br />
+            <br />
+            <ContactForm />
         </section>
     );
 };

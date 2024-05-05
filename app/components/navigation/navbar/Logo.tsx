@@ -29,7 +29,7 @@ const Logo = () => {
 
     return (
         <>
-            <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+            <div style={{ display: showButton ? "none" : "block" }}>
                 <Image
                     src={"/images/logo.png"}
                     alt="Logo"
@@ -37,7 +37,7 @@ const Logo = () => {
                     height={width < 1024 ? "50" : "60"}
                     className="relative"
                 />
-            </Link>
+            </div>
         </>
     );
 };

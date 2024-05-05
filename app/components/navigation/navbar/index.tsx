@@ -15,10 +15,15 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             <div className="w-full h-20 sticky top-0 nav-bar z-10">
                 <div className="container mx-auto px-4 h-full">
                     <div className="flex justify-around items-center h-full">
-                        <div className="w-[15%] flex justify-evenly align-middle">
+                        <Link
+                            href="/"
+                            className="w-[15%] p-2 flex justify-evenly align-middle"
+                        >
                             <Logo />
-                            <h4 className="mt-1">ZayinHD</h4>
-                        </div>
+                            <h4 className="mt-1 text-black dark:text-white">
+                                ZayinHD
+                            </h4>
+                        </Link>
 
                         <div>
                             <ul className="hidden md:flex gap-x-6 text-primary text-xl font-bold dark:text-white">
@@ -64,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                                         viewBox="0 0 24 24"
                                     >
                                         <path
-                                            fill="#fff"
+                                            fill="#dde"
                                             d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
                                         />
                                     </svg>
@@ -74,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                         </div>
                     </div>
                 </div>
-                <hr className="text-primary" />
+                <hr className="text-primary dark:text-white" />
             </div>
         </>
     );

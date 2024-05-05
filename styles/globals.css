@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 body {
     font-family: "Merriweather", serif;
@@ -13,18 +12,21 @@ body {
         @apply mb-5 text-primary text-center text-xl lg:text-3xl  underline underline-offset-8 decoration-primary dark:decoration-white dark:text-white;
     }
     .text-bd {
-        @apply text-xl text-white dark:text-black;
+        @apply xm:text-black text-xl md:text-white dark:text-black;
     }
     .btn-info {
         @apply mr-5 border-2 border-black dark:border-white rounded-full text-black dark:text-white py-1 px-4 bg-transparent hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary;
     }
     .nav-bar {
-        @apply bg-transparent text-primary  dark:text-white;
+        @apply bg-transparent backdrop-blur-sm text-primary  dark:text-white;
     }
     .side-bar-nav {
         @apply flex flex-col justify-evenly items-start text-center text-5xl font-bold leading-relaxed text-primary dark:text-white;
     }
     .sm-icons {
         @apply text-black  hover:text-primary dark:text-white dark:hover:text-primary;
+    }
+    .form-send-btn {
+        @apply w-[50%] text-black border border-primary hover:bg-primary hover:text-white font-bold py-2 rounded-md focus:outline-none dark:border dark:border-white dark:hover:bg-white dark:text-white dark:hover:text-primary;
     }
 }
