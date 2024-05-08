@@ -22,7 +22,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('/app/api/email', formData);
+            const response = await axios.post('/api/email', formData);
             console.log('Response:', response.data);
             setSubmitted(true);
             setFormData({ name: '', email: '', subject: '', message: '' });
@@ -34,7 +34,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={ handleSubmit } className="max-w-lg mx-auto p-4 rounded-lg" >
+        <form onSubmit={ handleSubmit } method='POST' className="max-w-lg mx-auto p-4 rounded-lg" >
             <h1 className='font-bold mb-4'>Write me a message:</h1>
             <input
                 type="text"

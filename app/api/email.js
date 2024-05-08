@@ -1,8 +1,28 @@
 // pages/api/email.js
 import nodemailer from "nodemailer";
 import { userEmail, userPass } from "/api/config";
+import Cors from "cors";
+
+// Initializing the cors middleware
+const cors = Cors({
+    methods: ["POST"], // Allow only POST requests
+});
+
+// Helper method to make sure cors is used in the route
+function runMiddleware(req, res, fn) {
+    return new Promise((resolve, reject) => {
+        fn(req, res, (result) => {
+            if (result instanceof Error) {
+                return reject(result);
+            }
+            return resolve(result);
+        });
+    });
+}
 
 export default async function handler(req, res) {
+    await runMiddleware(req, res, cors);
+
     if (req.method === "POST") {
         try {
             // Create a Nodemailer transporter using Gmail credentials
