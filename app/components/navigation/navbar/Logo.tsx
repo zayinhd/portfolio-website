@@ -7,7 +7,7 @@ import Link from "next/link";
 const Logo = () => {
     const [showButton, setShowButton] = useState<boolean>(false);
     const changeNavButton = () => {
-        if (window.scrollY >= 400 && window.innerWidth < 768) {
+        if (window.scrollY >= 300 && window.innerWidth < 768) {
             setShowButton(true);
         } else {
             setShowButton(false);
