@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex flex-row justify-center">
                 <ul className="text-center">
                     <li>
-                        <p>Connect with me</p>
+                        <p className="xm:ml-5">Connect with me</p>
                     </li>
                     <li>
                         <SocialMediaIcons />

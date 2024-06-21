@@ -7,63 +7,26 @@ const About = () => {
             <div className="w-full lg:w-full m-4 text-left ">
                 <h1 className="text-3xl page-topics font-bold">About Me</h1>
                 <div className=" text-center flex xm:flex-col xm:justify-center xm:align-middle md:flex-row">
-                    <div className="mr-4 flex-grow">
-                        <h1 className="text-2xl font-bold">
-                            Hey there! I'm Mubarak Mikhail,
-                        </h1>
-                        <p>
-                            Currently pursuing my {"  "}
-                            <b> Bsc. in Computer Science </b> at{"  "}
-                            <b>Knutsford University College</b>
-                            , I'm fueled by a passion for learning and a drive
-                            to push the boundaries of what's possible in the
-                            digital realm. Alongside my studies, I eagerly seek
-                            out internships and side projects to expand my
-                            skills and gain real-world experience. with some
-                            experience in some backend tools. I've built some
-                            interesting projects over the past year with my
-                            unmatchable skill, Lol.
-                            <br />
-                            <br />
-                            My next big goal is to break and dive deep into the
-                            <b> Back-end field</b> and extrapolate the knowledge
-                            I extract from my learning process into my{" "}
-                            <b>upcoming projects.</b>
-                            <br />
-                            <br />
-                            Beyond coding, you'll often find me exploring the{" "}
-                            <b>
-                                latest tech trends, playing football, or
-                                volunteering my time to mentor aspiring
-                                developers.
-                            </b>{" "}
-                            I believe in giving back to the community that has
-                            nurtured my growth and in paying it forward to the
-                            next generation of tech enthusiasts.
-                            <br />
-                            So, whether you're here to explore my projects, chat
-                            about the latest tech breakthroughs, or just geek
-                            out over lines of code, I'm thrilled to have you
-                            along for the ride.{" "}
-                            <b>
-                                Let's embark on this exciting journey together
-                            </b>{" "}
-                            and make some magic happen in the world of software
-                            engineering!
-                        </p>
-                    </div>
-                    <div className=" text-center flex-shrink-0">
-                        <div className="h-full ">
-                            <Image
-                                src="/images/my-image.jpg"
-                                width={200}
-                                height={100}
-                                alt="my-image"
-                                className="rounded-lg"
-                                style={{ width: "80%", height: "auto" }}
-                            />
-                        </div>
-                    </div>
+                    <h1 className="text-2xl font-bold text-bd">
+                        Hey there! I'm Mubarak {"  "}Mikhail, Zayin
+                    </h1>
+                    <p>
+                        Currently pursuing my {"  "}
+                        <b className="text-bd"> Bsc. in Computer Science </b> at
+                        {"  "}
+                        <b className="text-bd">Knutsford University College.</b>
+                        {"  "}
+                        Alongside my studies, I eagerly seek out{" "}
+                        <b className="text-bd">internships</b> and side projects
+                        to expand my skills and gain real-world experience. With
+                        some experience in some programming languages like{" "}
+                        <b className="text-bd">JS, Python and Java</b> and
+                        frameworks, I've built some interesting projects over
+                        the past years with my acquired knowledge not{" "}
+                        <b className="text-bd">AI</b>, Lol.
+                        <br />
+                        <br />
+                    </p>
                 </div>
             </div>
         </section>

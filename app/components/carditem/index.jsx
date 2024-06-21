@@ -36,14 +36,14 @@ const CardItem = ({ projects }) => {
                             <Link
                                 href={ project.visit }
                                 target="_blank"
-                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-primary hover:bg-grey"
+                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-secondary hover:bg-grey"
                             >
                                 Visit
                             </Link>
                             <Link
                                 href={ project.source }
                                 target="_blank"
-                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-primary hover:bg-grey"
+                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-secondary hover:bg-grey"
                             >
                                 Source
                             </Link>

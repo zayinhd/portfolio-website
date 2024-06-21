@@ -22,7 +22,7 @@ export const author = {
 export const seoData = {
     title: "Zayin Mikhail | Front-End Developer",
     description:
-        "Mikhail is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.",
+        "Zayin Mikhail is an aspiring software developer who is focusing building (and occasionally designing) web applications and tools to help other users and developers.",
     author: author.name,
     url: "https://zayinhd.vercel.app/",
     keywords: [

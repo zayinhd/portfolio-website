@@ -36,7 +36,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                     />
                 ))}
             </head>
-            <body className="box-border bg-white dark:bg-secondary">
+            <body className="box-border bg-[url('/images/techie-two.jpg')] bg-cover dark:bg-[url('/images/techie-one.jpg')] ">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"

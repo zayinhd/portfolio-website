@@ -9,10 +9,10 @@ body {
 /* Your custom styles here */
 @layer components {
     .page-topics {
-        @apply mb-5 text-primary text-center text-xl lg:text-3xl  underline underline-offset-8 decoration-primary dark:decoration-white dark:text-white;
+        @apply mb-5 text-primary text-center text-xl lg:text-3xl  underline underline-offset-8 decoration-primary dark:decoration-white dark:text-secondary;
     }
     .text-bd {
-        @apply xm:text-black text-xl md:text-white dark:text-black;
+        @apply text-primary xm:text-black text-xl dark:text-secondary;
     }
     .btn-info {
         @apply mr-5 border-2 border-black dark:border-white rounded-full text-black dark:text-white py-1 px-4 bg-transparent hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary;
