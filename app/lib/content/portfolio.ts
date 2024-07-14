@@ -1,18 +1,8 @@
 /*
  * =========================
- * AUTHOR INFO
+ * MY INFO
  * =========================
  */
-
-interface SocialLinksType {
-    [key: string]: string;
-}
-export const socialLinks: SocialLinksType = {
-    instagram: "https://www.instagram.com/vatsalsinghkv",
-    github: "https://github.com/vatsalsinghkv",
-    twitter: "https://twitter.com/vatsalsinghkv",
-    linkedin: "https://www.linkedin.com/in/vatsalsinghkv/",
-};
 
 export const author = {
     name: "Mubarak Mikhail",

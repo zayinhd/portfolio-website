@@ -6,9 +6,7 @@ const Footer = () => {
             <hr className="mb-2 text-primary dark:text-white" />
             <div className="flex flex-row justify-center">
                 <ul className="text-center">
-                    <li>
-                        <p className="xm:ml-5">Connect with me</p>
-                    </li>
+                    <li>Connect with me</li>
                     <li>
                         <SocialMediaIcons />
                     </li>

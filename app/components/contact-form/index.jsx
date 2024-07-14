@@ -22,10 +22,22 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('/api/email', formData);
-            console.log('Response:', response.data);
-            setSubmitted(true);
-            setFormData({ name: '', email: '', subject: '', message: '' });
+            const response = await fetch('/api/email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+
+                console.log('Response:', await response.json());
+                setSubmitted(true);
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            } else {
+                console.error('Error sending email:', await response.text());
+            }
         }
         catch (error) {
             console.error('Error sending email:', error);

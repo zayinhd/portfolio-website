@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="text-center">
-                <h1 className="text-3xl font-bold text-secondary underline underline-offset-8 decoration-secondary dark:decoration-secondary dark:text-secondary">
+                <h1 className="text-3xl font-bold text-black underline underline-offset-8 decoration-black dark:decoration-white dark:text-white">
                     Skills
                 </h1>
                 <div className="mt-3 flex flex-wrap">

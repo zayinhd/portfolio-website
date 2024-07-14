@@ -14,7 +14,7 @@ const projects: ProjectsProps[] = [
         title: "Portfolio Website",
         image: "/assets/portfolio-website.png",
         description:
-            "My personal portfolio website developed with NextJs, Framer and TailwindCss.",
+            "Built with NextJs, Framer and TailwindCss. Showcases a brief information of who I am.",
         tags: ["NextJs", "TailwindCss", "Framer"],
         visit: "https://zayinhd.vercel.app/",
         source: "https://github.com/zayinhd/portfolio-website",
@@ -24,7 +24,7 @@ const projects: ProjectsProps[] = [
         title: "E-Market App",
         image: "/assets/emarket.png",
         description:
-            "Stay on top of your day with our personalized TodoList app. Effortlessly organize tasks, set deadlines, and collaborate seamlessly for ultimate productivity.",
+            "Developed with ReactJS, MUI, Commercejs and Stripe api. Stripe api integrated with app to provide a gateway for receiving payments.",
         tags: ["ReactJs", "MaterialUI", "CommerceJs"],
         visit: "https://react-todolist-project.vercel.app/",
         source: "https://github.com/zayinhd/react-todolist-project",

@@ -36,7 +36,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                     />
                 ))}
             </head>
-            <body className="box-border bg-[url('/images/techie-two.jpg')] bg-cover dark:bg-[url('/images/techie-one.jpg')] ">
+            <body className="box-border bg-[url('/images/light-mode2-img.jpg')] bg-cover dark:bg-[url('/images/dark-mode-img.jpg')] ">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -46,7 +46,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                         <Navigation />
 
                         <div className=" p-5 flex justify-center ">
-                            <main className="h-[100%] w-[100%] sm:w-[75%] m-auto flex flex-row justify-center flex-wrap">
+                            <main className="h-[100%] w-[100%] xm:w-[90%] m-auto text-xm flex flex-row justify-center flex-wrap">
                                 {children}
                             </main>
                         </div>

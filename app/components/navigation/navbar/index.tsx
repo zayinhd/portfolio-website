@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Logo from "./Logo";
+import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { ThemeSwitcher } from "../../theme-toggle/ThemeSwitcher";
@@ -19,7 +19,15 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                             href="/"
                             className="w-[15%] p-2 flex justify-evenly align-middle"
                         >
-                            <Logo />
+                            <div>
+                                <Image
+                                    src={"/images/logo.png"}
+                                    alt="Logo"
+                                    width={40}
+                                    height={40}
+                                    className="w-[40px]"
+                                />
+                            </div>
                             <h4 className="mt-1 text-black dark:text-white">
                                 ZayinHD
                             </h4>
@@ -69,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                                         viewBox="0 0 24 24"
                                     >
                                         <path
-                                            fill="secondary"
+                                            fill="currentColor"
                                             d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
                                         />
                                     </svg>
