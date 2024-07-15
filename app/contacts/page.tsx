@@ -1,5 +1,6 @@
 "use client";
-import ContactForm from "../components/contact-form";
+
+import SocialMediaIcons from "../components/stacks/SocialMediaIcons/SocialMediaIcons";
 
 const Contacts = () => {
     return (
@@ -19,9 +20,16 @@ const Contacts = () => {
                     <b> open</b>.
                 </p>
             </div>
-            <br />
-            <br />
-            <ContactForm />
+
+            <div className=" w-full flex flex-col justify-center nav-bar">
+                <div className="flex flex-row justify-center">
+                    <ul className="text-center">
+                        <li>
+                            <SocialMediaIcons />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     );
 };
