@@ -7,7 +7,7 @@ const CardItem = ({ projects }) => {
             { projects.map((project) => (
                 <li
                     key={ project.id }
-                    className="text-center xm:w-[30%] m-2 p-1 border-2 border-primary dark:border-white"
+                    className=" w-full text-center m-2 p-1 border-2 border-primary dark:border-white"
                 >
                     <Image
                         src={ project.image }
