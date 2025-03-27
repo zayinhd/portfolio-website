@@ -5,11 +5,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ThemeSwitcher } from "../../theme-toggle/ThemeSwitcher";
 
-interface NavbarProps {
-    toggle: () => void;
-}
 
-const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
+
+const Navbar = ({ toggle }) => {
     return (
         <>
             <div className="w-full h-20 sticky top-0 nav-bar z-10">
@@ -21,10 +19,10 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                         >
                             <div>
                                 <Image
-                                    src={"/images/logo.png"}
+                                    src={ "/images/logo.png" }
                                     alt="Logo"
-                                    width={40}
-                                    height={40}
+                                    width={ 40 }
+                                    height={ 40 }
                                     className="w-[40px]"
                                 />
                             </div>
@@ -36,24 +34,24 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                         <div>
                             <ul className="hidden md:flex gap-x-6 text-primary text-xl font-bold dark:text-white">
                                 <motion.li
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
+                                    whileHover={ { scale: 1.1 } }
+                                    whileTap={ { scale: 0.9 } }
                                 >
                                     <Link href="/projects">
                                         <p>Projects</p>
                                     </Link>
                                 </motion.li>
                                 <motion.li
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
+                                    whileHover={ { scale: 1.1 } }
+                                    whileTap={ { scale: 0.9 } }
                                 >
                                     <Link href="/about">
                                         <p>About</p>
                                     </Link>
                                 </motion.li>
                                 <motion.li
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
+                                    whileHover={ { scale: 1.1 } }
+                                    whileTap={ { scale: 0.9 } }
                                 >
                                     <Link href="/contacts">
                                         <p>Contacts</p>
@@ -62,13 +60,13 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
                             </ul>
                             <div className="w-25">
                                 <motion.button
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
+                                    whileHover={ { scale: 1.1 } }
+                                    whileTap={ { scale: 0.9 } }
                                     type="button"
                                     className="inline-flex items-center md:hidden"
-                                    onClick={toggle}
+                                    onClick={ toggle }
                                 >
-                                    {/* Menu icon */}
+                                    {/* Menu icon */ }
 
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

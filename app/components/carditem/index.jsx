@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const CardItem = ({ projects }) => {
     return (
-        <ul className="flex flex-wrap justify-center">
+        <ul className="bg-secondary flex  flex-wrap justify-center">
             { projects.map((project) => (
                 <li
                     key={ project.id }
-                    className=" w-full text-center m-2 p-1 border-2 border-primary dark:border-white"
+                    className="w-[30%] text-sm text-center m-2 p-1 border-2 border-primary dark:border-white"
                 >
                     <Image
                         src={ project.image }

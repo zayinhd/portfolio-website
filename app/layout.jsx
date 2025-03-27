@@ -4,9 +4,8 @@ import Footer from "./components/Footer";
 import { seoData } from "./lib/content/portfolio";
 
 import { ThemeProvider } from "./components/themes/theme-provider";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
     title: seoData.title,
     authors: [
         {
@@ -22,19 +21,19 @@ export const metadata: Metadata = {
     icons: seoData.icons,
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout = ({ children }) => {
     return (
         <html lang="en">
             <head>
-                {seoData.icons.map((icon) => (
+                { seoData.icons.map((icon) => (
                     <link
-                        key={icon.id}
-                        rel={icon.rel}
-                        sizes={icon.sizes}
-                        type={icon.type}
-                        href={icon.url}
+                        key={ icon.id }
+                        rel={ icon.rel }
+                        sizes={ icon.sizes }
+                        type={ icon.type }
+                        href={ icon.url }
                     />
-                ))}
+                )) }
             </head>
             <body className="box-border bg-[url('/images/light-mode2-img.jpg')] bg-cover dark:bg-[url('/images/dark-mode-img.jpg')] ">
                 <ThemeProvider
@@ -47,7 +46,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
                         <div className=" p-5 flex justify-center ">
                             <main className="h-[100%] w-[100%] xm:w-[90%] m-auto text-xm flex flex-row justify-center flex-wrap">
-                                {children}
+                                { children }
                             </main>
                         </div>
                         <Footer />

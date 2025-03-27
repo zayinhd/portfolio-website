@@ -35,29 +35,29 @@ const stacks = [
     },
 ];
 
-const SocialMediaIcons: React.FC = () => {
+const SocialMediaIcons = () => {
     return (
         <div>
             <ul className="h-full flex justify-evenly">
-                {stacks.map((stack) => (
+                { stacks.map((stack) => (
                     <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                        whileHover={ { scale: 1.1 } }
+                        whileTap={ { scale: 0.9 } }
                         className="bg-blue-500 font-bold py-2 px-4 rounded-md sm-icons"
-                        key={stack.id}
+                        key={ stack.id }
                     >
                         <li>
                             <a
-                                href={stack.href}
+                                href={ stack.href }
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl"
                             >
-                                {stack.icon}
+                                { stack.icon }
                             </a>
                         </li>
                     </motion.button>
-                ))}
+                )) }
             </ul>
         </div>
     );

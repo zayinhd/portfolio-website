@@ -1,14 +1,4 @@
-interface ProjectsProps {
-    id: number;
-    title: string;
-    image: string;
-    description: string;
-    tags: string[];
-    visit: string;
-    source: string;
-}
-
-const projects: ProjectsProps[] = [
+const projects = [
     {
         id: 1,
         title: "Portfolio Website",

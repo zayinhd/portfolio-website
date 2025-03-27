@@ -11,11 +11,7 @@ import {
 import { SiJavascript, SiNextdotjs, SiFramer } from "react-icons/si";
 import { motion } from "framer-motion";
 
-interface Stack {
-    id: number;
-    icon: JSX.Element;
-}
-const stacks: Stack[] = [
+const stacks = [
     {
         id: 0,
         icon: <FaHtml5 />,
@@ -56,16 +52,16 @@ const Stacks = () => {
     return (
         <>
             <ul className="w-full flex flex-row flex-wrap justify-center">
-                {stacks.map((stack) => (
+                { stacks.map((stack) => (
                     <motion.button
-                        whileHover={{ scale: 1.1 }} // Scale up by 10% on hover
-                        whileTap={{ scale: 0.9 }} // Scale down by 10% on tap
+                        whileHover={ { scale: 1.1 } } // Scale up by 10% on hover
+                        whileTap={ { scale: 0.9 } } // Scale down by 10% on tap
                         className="bg-blue-500 text-black font-bold py-2 px-4 rounded-md dark:text-white"
-                        key={stack.id}
+                        key={ stack.id }
                     >
-                        <li className="text-3xl">{stack.icon}</li>
+                        <li className="text-3xl">{ stack.icon }</li>
                     </motion.button>
-                ))}
+                )) }
             </ul>
         </>
     );

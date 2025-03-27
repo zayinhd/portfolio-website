@@ -12,7 +12,7 @@ body {
         @apply mb-5 text-primary text-center text-xl lg:text-3xl  underline underline-offset-8 decoration-primary dark:decoration-white dark:text-white;
     }
     .text-bd {
-        @apply mx-1 text-secondary  text-xl dark:text-primary;
+        @apply mx-1 text-secondary  text-xl dark:text-white;
     }
     .btn-info {
         @apply mr-5 border-2 border-black dark:border-white rounded-full text-black dark:text-white py-1 px-4 bg-transparent hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary;
