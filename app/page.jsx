@@ -10,7 +10,7 @@ const Home = () => {
         <section className="h-[100%] flex flex-col flex-wrap text-center ">
             <div className="my-6 mx-auto">
                 <motion.div
-                    className="w-[100%] md:w-[50%] lg:w-full m-auto text-left flex items-center"
+                    className="w-[100%] md:w-[50%] lg:w-full m-auto text-center flex items-center"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
