@@ -17,15 +17,7 @@ const Navbar = ({ toggle }) => {
                             href="/"
                             className="w-[15%] p-2 flex justify-evenly align-middle"
                         >
-                            <div>
-                                <Image
-                                    src={ "/images/logo.png" }
-                                    alt="Logo"
-                                    width={ 40 }
-                                    height={ 40 }
-                                    className="w-[40px]"
-                                />
-                            </div>
+                            
                             <h4 className="mt-1 text-black dark:text-white">
                                 ZayinHD
                             </h4>

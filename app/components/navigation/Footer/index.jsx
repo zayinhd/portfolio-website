@@ -1,4 +1,4 @@
-import SocialMediaIcons from "../stacks/SocialMediaIcons/SocialMediaIcons";
+import SocialMediaIcons from "../../stacks/SocialMediaIcons/SocialMediaIcons";
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="pt-1 text-center text-xl">
+            <div className="pt-1 text-center text-sm">
                 <p>&copy; Copyright 2023. All rights reserved</p>
             </div>
         </div>

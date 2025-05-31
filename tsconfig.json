@@ -20,14 +20,25 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/components/carditem/index.jsx"
+    "app/components/carditem/index.jsx",
+    "app/lib/content/portfolio.js",
+    "app/components/stacks/SocialMediaIcons/SocialMediaIcons.jsx",
+    "app/components/stacks/index.jsx",
+    "app/components/theme-toggle/ThemeSwitcher.jsx",
+    "app/components/themes/theme-provider.jsx",
+    "app/constants/constants.js",
+    "app/contacts/page.jsx",
+    "app/projects/page.jsx",
+    "app/page.jsx",
+    "app/layout.jsx"
   ],
   "exclude": [
     "node_modules"

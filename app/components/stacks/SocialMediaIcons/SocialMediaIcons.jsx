@@ -43,7 +43,7 @@ const SocialMediaIcons = () => {
                     <motion.button
                         whileHover={ { scale: 1.1 } }
                         whileTap={ { scale: 0.9 } }
-                        className="bg-blue-500 font-bold py-2 px-4 rounded-md sm-icons"
+                        className=" font-bold py-2 px-4 rounded-md sm-icons"
                         key={ stack.id }
                     >
                         <li>

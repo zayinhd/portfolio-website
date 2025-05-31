@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const CardItem = ({ projects }) => {
     return (
-        <ul className="bg-secondary flex  flex-wrap justify-center">
+        <ul className="flex flex-col md:flex-row justify-center items-center ">
             { projects.map((project) => (
                 <li
                     key={ project.id }
-                    className="w-[30%] text-sm text-center m-2 p-1 border-2 border-primary dark:border-white"
+                    className="w-[80%] md:w-[30%] text-sm text-center m-2 p-1 border-2 border-primary dark:border-white"
                 >
                     <Image
                         src={ project.image }
@@ -22,21 +22,21 @@ const CardItem = ({ projects }) => {
                     </h1>
                     <p className="py-2">{ project.description }</p>
                     <div>
-                        <ul className="flex justify-between">
+                        <ul className="flex justify-evenly">
                             { project.tags.map((tag) => (
                                 <li
                                     key={ tag }
-                                    className="mt-1 p-1 border-2 rounded-lg text-primary border-primary dark:border-white dark:text-white"
+                                    className="mt-1 p-1 border-2 rounded-lg text-primary text-[14px] border-primary dark:border-white dark:text-white"
                                 >
                                     { tag }
                                 </li>
                             )) }
                         </ul>
-                        <div className="flex justify-between">
+                        <div className="flex justify-center">
                             <Link
                                 href={ project.visit }
                                 target="_blank"
-                                className="mt-1 p-1 border-2 rounded-lg text-white border-white bg-secondary hover:bg-secondary"
+                                className="mt-1 mr-3 p-1 border-2 rounded-lg text-white border-white bg-secondary hover:bg-secondary"
                             >
                                 Visit
                             </Link>

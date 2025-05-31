@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import Navigation from "./components/navigation";
-import Footer from "./components/Footer";
+import Footer from "./components/navigation/Footer";
 import { seoData } from "./lib/content/portfolio";
 
 import { ThemeProvider } from "./components/themes/theme-provider";
