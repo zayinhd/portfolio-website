@@ -1,16 +1,16 @@
 import React from "react";
-import Image from "next/image";
 
 const About = () => {
     return (
-        <section className="w-full flex-center flex-col">
-            <div className="w-full lg:w-full m-4 text-left ">
+        <section className=" w-[100%] md:w-[60%] flex flex-col justify-center items-center">
+            <div className=" m-4">
                 <h1 className="text-3xl page-topics font-bold">About Me</h1>
-                <div className=" text-center flex xm:flex-col xm:justify-center xm:align-middle md:flex-row">
-                    <h1 className="text-2xl font-bold text-bd">
+                <div className=" ">
+                    <h1 className="text-2xl text-center font-bold text-bd">
                         Hey there! I'm Mubarak {"  "}Mikhail, Zayin
                     </h1>
-                    <p>
+
+                    <p className="text-sm md:text-lg">
                         Currently pursuing my {"  "}
                         <b className="text-bd"> Bsc. in Computer Science </b> at
                         {"  "}
