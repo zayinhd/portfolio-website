@@ -7,7 +7,7 @@ A personal website showcasing my work, projects, and profile.
 
 ---
 
-##Features
+## Features
 - Personal introduction & portfolio  
 - Responsive design (mobile & desktop friendly)  
 - Built with **Next.js, Tailwind CSS, Framer Motion**  
@@ -15,7 +15,7 @@ A personal website showcasing my work, projects, and profile.
 
 ---
 
-##Tech Stack
+## Tech Stack
 - **Frontend:** [Next.js](https://nextjs.org/)  
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)  
@@ -23,7 +23,7 @@ A personal website showcasing my work, projects, and profile.
 
 ---
 
-##Installation & Setup
+## Installation & Setup
 
 Clone the repository and run it locally:
 
