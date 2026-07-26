@@ -5,8 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ThemeSwitcher } from "../../theme-toggle/ThemeSwitcher";
 
-
-
 const Navbar = ({ toggle }) => {
     return (
         <>
@@ -17,7 +15,6 @@ const Navbar = ({ toggle }) => {
                             href="/"
                             className="w-[15%] p-2 flex justify-evenly align-middle"
                         >
-                            
                             <h4 className="mt-1 text-black dark:text-white">
                                 ZayinHD
                             </h4>
@@ -26,39 +23,39 @@ const Navbar = ({ toggle }) => {
                         <div>
                             <ul className="hidden md:flex gap-x-6 text-primary text-xl font-bold dark:text-white">
                                 <motion.li
-                                    whileHover={ { scale: 1.1 } }
-                                    whileTap={ { scale: 0.9 } }
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
                                 >
-                                    <Link href="/projects">
+                                    <Link href="/#projects">
                                         <p>Projects</p>
                                     </Link>
                                 </motion.li>
                                 <motion.li
-                                    whileHover={ { scale: 1.1 } }
-                                    whileTap={ { scale: 0.9 } }
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
                                 >
-                                    <Link href="/about">
+                                    <Link href="/#about">
                                         <p>About</p>
                                     </Link>
                                 </motion.li>
                                 <motion.li
-                                    whileHover={ { scale: 1.1 } }
-                                    whileTap={ { scale: 0.9 } }
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
                                 >
-                                    <Link href="/contacts">
+                                    <Link href="/#contacts">
                                         <p>Contacts</p>
                                     </Link>
                                 </motion.li>
                             </ul>
                             <div className="w-25">
                                 <motion.button
-                                    whileHover={ { scale: 1.1 } }
-                                    whileTap={ { scale: 0.9 } }
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
                                     type="button"
                                     className="inline-flex items-center md:hidden"
-                                    onClick={ toggle }
+                                    onClick={toggle}
                                 >
-                                    {/* Menu icon */ }
+                                    {/* Menu icon */}
 
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
