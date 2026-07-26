@@ -1,18 +1,12 @@
-/*
- * =========================
- * MY INFO
- * =========================
- */
-
 export const author = {
     name: "Mubarak Mikhail",
     email: "zayinm300@gmail.com",
 };
 
 export const seoData = {
-    title: "Zayin Mikhail | Front-End Developer",
+    title: "Zayin Mikhail | Junior Software Developer",
     description:
-        "Zayin Mikhail is an aspiring software developer who is focusing building (and occasionally designing) web applications and tools to help other users and developers.",
+        "Zayin Mikhail is juniour software developer focused on  building (and occasionally designing) web applications and tools to help other users and developers.",
     author: author.name,
     url: "https://zayinhd.vercel.app/",
     keywords: [
