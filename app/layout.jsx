@@ -18,23 +18,17 @@ export const metadata = {
     alternates: {
         canonical: seoData.url,
     },
-    icons: seoData.icons,
+    icons: seoData.icons.map((icon) => ({
+        rel: icon.rel,
+        sizes: icon.sizes,
+        type: icon.type,
+        url: icon.url,
+    })),
 };
 
 const RootLayout = ({ children }) => {
     return (
-        <html lang="en">
-            <head>
-                { seoData.icons.map((icon) => (
-                    <link
-                        key={ icon.id }
-                        rel={ icon.rel }
-                        sizes={ icon.sizes }
-                        type={ icon.type }
-                        href={ icon.url }
-                    />
-                )) }
-            </head>
+        <html lang="en" suppressHydrationWarning>
             <body className="box-border bg-[url('/images/light-mode2-img.jpg')] bg-cover dark:bg-[url('/images/dark-mode-img.jpg')] ">
                 <ThemeProvider
                     attribute="class"
@@ -46,7 +40,7 @@ const RootLayout = ({ children }) => {
 
                         <div className=" p-5 flex justify-center ">
                             <main className="h-[100%] w-[100%] xm:w-[90%] m-auto text-xm flex flex-row justify-center flex-wrap">
-                                { children }
+                                {children}
                             </main>
                         </div>
                         <Footer />
