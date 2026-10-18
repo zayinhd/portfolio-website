@@ -1,5 +1,5 @@
 import projects from "../constants/constants";
-import CardItem from "../components/carditem";
+import projectItem from "../components/projectItem";
 
 const Projects = () => {
     return (
@@ -11,7 +11,7 @@ const Projects = () => {
                     <b>check them out.</b>
                 </p>
                 <div className="mt-5">
-                    <CardItem projects={projects} />
+                    <projectItem projects={projects} />
                 </div>
             </div>
         </section>
