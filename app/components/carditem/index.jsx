@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const CardItem = ({ projects }) => {
     return (
-        <ul className="flex flex-col md:flex-row justify-evenly items-center gap-4">
+        <ul className="flex flex-col md:flex-row justify-center items-center ">
             {projects.map((project) => (
                 <li
                     key={project.id}
-                    className="w-[80%] md:w-[30%] text-sm text-center p-1 border-2 border-primary dark:border-white"
+                    className="w-[80%] md:w-[30%] text-sm text-center m-2 p-1 border-2 border-primary dark:border-white"
                 >
                     <Image
                         src={project.image}
@@ -22,11 +22,11 @@ const CardItem = ({ projects }) => {
                     </h1>
                     <p className="py-2">{project.description}</p>
                     <div>
-                        <ul className="flex flex-wrap justify-evenly gap-2">
+                        <ul className="flex justify-evenly">
                             {project.tags.map((tag) => (
                                 <li
                                     key={tag}
-                                    className="p-1 border-2 rounded-lg text-primary text-[10px] md:text-[14px] border-primary dark:border-white dark:text-white"
+                                    className="mt-1 p-1  border-2 rounded-lg text-primary text-[10px] md:text-[14px] border-primary dark:border-white dark:text-white"
                                 >
                                     {tag}
                                 </li>

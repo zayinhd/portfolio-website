@@ -15,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/components/projectItem/index.jsx",
+    "app/components/carditem/index.jsx",
     "app/lib/content/portfolio.js",
     "app/components/stacks/SocialMediaIcons/SocialMediaIcons.jsx",
     "app/components/stacks/index.jsx",
@@ -38,8 +38,7 @@
     "app/contacts/page.jsx",
     "app/projects/page.jsx",
     "app/page.jsx",
-    "app/layout.jsx",
-    ".next/dev/types/**/*.ts"
+    "app/layout.jsx"
   ],
   "exclude": [
     "node_modules"

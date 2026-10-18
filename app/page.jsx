@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Stacks from "./components/stacks";
-import CardItem from "./components/projectItem";
+import CardItem from "./components/carditem";
 import SocialMediaIcons from "./components/stacks/SocialMediaIcons/SocialMediaIcons";
 import projects from "./constants/constants";
 import { motion } from "framer-motion";
@@ -82,9 +82,9 @@ const Home = () => {
 
             <section
                 id="about"
-                className="w-full md:w-[60%] mx-auto flex flex-col justify-center items-center mt-10 scroll-mt-24"
+                className="w-full md:w-[60%] flex flex-col justify-center items-center mt-10 scroll-mt-24"
             >
-                <div className="w-full p-4 text-left">
+                <div className="m-4 text-left">
                     <h1 className="text-3xl page-topics font-bold">About Me</h1>
                     <div>
                         <h1 className="text-2xl text-center font-bold text-bd">
