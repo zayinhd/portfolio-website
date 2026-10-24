@@ -29,7 +29,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="box-border bg-[url('/images/light-mode2-img.jpg')] bg-cover dark:bg-[url('/images/dark-mode-img.jpg')] ">
+            <body className="box-border">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -39,7 +39,7 @@ const RootLayout = ({ children }) => {
                         <Navigation />
 
                         <div className=" p-5 flex justify-center ">
-                            <main className="h-[100%] w-[100%] xm:w-[90%] m-auto text-xm flex flex-row justify-center flex-wrap">
+                            <main className="h-[100%] w-[100%] xm:w-[90%] m-auto text-xm flex flex-col items-center">
                                 {children}
                             </main>
                         </div>

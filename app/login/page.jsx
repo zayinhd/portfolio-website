@@ -2,37 +2,57 @@
 
 import { useActionState } from "react";
 import { login } from "../actions/auth";
-import Input from "../components/input";
-import Button from "../components/button";
 
 const Login = () => {
-    const [state, formAction] = useActionState(login, undefined);
+    const [state, formAction, isPending] = useActionState(login, null);
 
     return (
-        <>
-            <div className="h-[60vh] flex">
-                <form
-                    action={formAction}
-                    className="flex flex-col justify-center items-center"
-                >
-                    <h1 className="text-white text-2xl">Login</h1>
-                    <Input type="text" name="username" placeholder="Username" />
-                    <Input
-                        type="password"
+        <main className="flex min-h-[60vh] w-full items-center justify-center px-4">
+            <form
+                action={formAction}
+                className="flex w-full max-w-sm flex-col gap-4 rounded-md border border-primary bg-white/80 p-6 text-primary shadow-sm dark:border-white dark:bg-secondary/90 dark:text-white"
+            >
+                <h1 className="text-center text-2xl font-bold">Log in</h1>
+
+                <label className="flex flex-col gap-1 text-sm font-medium">
+                    Email
+                    <input
+                        autoComplete="email"
+                        className="w-full rounded border border-primary bg-transparent px-3 py-2 text-base outline-none focus:ring-2 focus:ring-primary dark:border-white dark:focus:ring-white"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                        type="email"
+                    />
+                </label>
+
+                <label className="flex flex-col gap-1 text-sm font-medium">
+                    Password
+                    <input
+                        autoComplete="current-password"
+                        className="w-full rounded border border-primary bg-transparent px-3 py-2 text-base outline-none focus:ring-2 focus:ring-primary dark:border-white dark:focus:ring-white"
                         name="password"
                         placeholder="Password"
+                        required
+                        type="password"
                     />
+                </label>
 
-                    {state?.message ? (
-                        <p className="mt-2 text-sm text-red-400">
-                            {state.message}
-                        </p>
-                    ) : null}
+                <button
+                    className="w-full rounded-md bg-primary px-4 py-2 font-bold text-white hover:opacity-90 disabled:cursor-not-allowed"
+                    disabled={isPending}
+                    type="submit"
+                >
+                    {isPending ? "Logging in..." : "Log in"}
+                </button>
 
-                    <Button type="submit">Login</Button>
-                </form>
-            </div>
-        </>
+                {state?.message ? (
+                    <p aria-live="polite" className="text-center text-sm">
+                        {state.message}
+                    </p>
+                ) : null}
+            </form>
+        </main>
     );
 };
 
