@@ -1,50 +1,78 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import bcrypt from "bcryptjs";
+import { createClient } from "../lib/supabase/server";
 
-import User from "../models/User";
-import { createSession, deleteSession } from "../lib/session";
-import db from "../lib/db";
+// const formData = {
+//     email: "",
+//     password: "",
+// }
+// export async function createUser(formData) {
+//     const email = formData.get("email");
+//     const password = formData.get("password");
 
-// import { createUser } from "./createuser";
+//     if (typeof email !== "string" || !email.trim() || typeof password !== "string" || !password) {
+//         return {
+//             success: false,
+//             message: "Enter an email address and password.",
+//         };
+//     }
 
-// await createUser();
+//     try {
+//         const supabase = await createClient();
+//         const { data, error } = await supabase.auth.signUp({
+//             email: email.trim(),
+//             password,
+//         });
 
-export async function login(state, formData) {
-    try {
-        const username = formData.get("username")?.trim();
-        const password = formData.get("password");
+//         if (error) {
+//             return {
+//                 success: false,
+//                 message: "Unable to create an account with those details.",
+//             };
+//         }
 
-        if (!username) return { message: "Username cannot be empty!" };
-        if (!password) return { message: "Password cannot be empty!" };
+//         return {
+//             success: true,
+//             message: data.session
+//                 ? "Account created successfully."
+//                 : "Account created. Check your email to confirm it.",
+//         };
+//     } catch {
+//         return {
+//             success: false,
+//             message: "Supabase is not configured. Check your environment variables.",
+//         };
+//     }
+// }
 
-        await db();
+export async function login(previousState, formData) {
+    const email = formData.get("email");
+    const password = formData.get("password");
 
-        const user = await User.findOne({ username });
-        if (!user) {
-            return {
-                message: "User does not exist!",
-            };
-        }
-
-        const isMatch = await bcrypt.compare(password, user.password);
-        if (!isMatch) {
-            return {
-                message: "Incorrect password, try again!",
-            };
-        }
-
-        await createSession(user._id);
-
-        redirect("/dashboard");
-    } catch (error) {
-        return { message: error.message || "Login failed. Try again." };
+    if (typeof email !== "string" || !email.trim() || typeof password !== "string" || !password) {
+        return { message: "Enter your email and password." };
     }
+
+    try {
+        const supabase = await createClient();
+        const { error } = await supabase.auth.signInWithPassword({
+            email: email.trim(),
+            password,
+        });
+
+        if (error) {
+            return { message: "Unable to log in with those credentials." };
+        }
+    } catch {
+        return { message: "Supabase is not configured. Check your environment variables." };
+    }
+
+    redirect("/dashboard");
 }
 
 export async function logout() {
-    deleteSession();
-
-    return redirect("/login");
+    const supabase = await createClient();
+    await supabase.auth.signOut();
+    redirect("/login");
 }

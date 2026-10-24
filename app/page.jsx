@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Stacks from "./components/stacks";
-import CardItem from "./components/carditem";
+import CardItem from "./components/projectItem";
+import AboutSection from "./components/about-section";
+import ContactForm from "./components/contact-form";
 import SocialMediaIcons from "./components/stacks/SocialMediaIcons/SocialMediaIcons";
 import projects from "./constants/constants";
 import { motion } from "framer-motion";
@@ -27,13 +29,11 @@ const Home = () => {
                             <b className="text-bd">Mubarak Mikhail, Zayin.</b>
                         </h1>
                         <p className="pt-3">
-                            As an aspiring software engineer, I am constantly
-                            exploring new technologies, regaining more knowledge
-                            skills. I've created some apps with{" "}
-                            <b className="text-bd">JS Frameworks </b>,{" "}
-                            <b className="text-bd">Python</b> and{" "}
-                            <b className="text-bd">Java.</b>. Currently diving
-                            deep into <b className="text-bd">Back-end techs.</b>
+                            As an aspiring software engineer, I build projects
+                            with JavaScript, Python, and Java, using React.js,
+                            Next.js, and Node.js for development. I also work
+                            with Docker and Kubernetes to package and manage
+                            applications.
                         </p>
                     </div>
                 </motion.div>
@@ -80,44 +80,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section
-                id="about"
-                className="w-full md:w-[60%] flex flex-col justify-center items-center mt-10 scroll-mt-24"
-            >
-                <div className="m-4 text-left">
-                    <h1 className="text-3xl page-topics font-bold">About Me</h1>
-                    <div>
-                        <h1 className="text-2xl text-center font-bold text-bd">
-                            Hey there! I'm Mubarak {"  "}Mikhail, Zayin
-                        </h1>
-
-                        <p className="text-sm md:text-lg">
-                            Currently pursuing my {"  "}
-                            <b className="text-bd">
-                                {" "}
-                                Bsc. in Computer Science{" "}
-                            </b>{" "}
-                            at
-                            {"  "}
-                            <b className="text-bd">
-                                Knutsford University College.
-                            </b>
-                            {"  "}
-                            Alongside my studies, I eagerly seek out{" "}
-                            <b className="text-bd">internships</b> and side
-                            projects to expand my skills and gain real-world
-                            experience. With some experience in some programming
-                            languages like{" "}
-                            <b className="text-bd">JS, Python and Java</b> and
-                            frameworks, I've built some interesting projects
-                            over the past years with my acquired knowledge not{" "}
-                            <b className="text-bd">AI</b>, Lol.
-                            <br />
-                            <br />
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <AboutSection />
 
             <section
                 id="contacts"
@@ -140,6 +103,8 @@ const Home = () => {
                         <b> open</b>.
                     </p>
                 </div>
+
+                <ContactForm />
 
                 <div className="w-full flex flex-col justify-center nav-bar mt-3">
                     <div className="flex flex-row justify-center">
